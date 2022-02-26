@@ -9,4 +9,4 @@ def msg_push(title, content, key):
         traceback.format_exc()
 if __name__ == '__main__':
     key = 'SCT104340TzBQGIqDlk0Wp6n0BN44W3Auk'
-    msg_push('今日打卡成功', '自动填写健康卡填报与 PTA 签到', key)
+    msg_push('今日打卡成功', '自动填写健康卡填报', key)

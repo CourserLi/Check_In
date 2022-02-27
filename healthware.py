@@ -34,7 +34,7 @@ def run(playwright: Playwright) -> None:
     page2.click("#radio_sfjwhy11 ins")
     page2.click("text=在校内居住 >> ins")
     page2.click("input[name=\"jtdz\"]", modifiers=["Control"])
-    page2.fill("input[name=\"jtdz\"]", "竹6, 501")
+    page2.fill("input[name=\"jtdz\"]", "广东省珠海市珠海科技学院竹6, 501")
     page2.click("text=绿色 >> ins")
     page2.click("input[name=\"jrtw\"]")
     page2.fill("input[name=\"jrtw\"]", "36")

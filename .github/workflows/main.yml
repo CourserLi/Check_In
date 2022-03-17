@@ -32,3 +32,4 @@ jobs:
 
       - name: 'Successfully'
         run: python ./success.py
+

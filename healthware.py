@@ -27,7 +27,7 @@ def run(playwright: Playwright) -> None:
     page2.click("text=为了全力做好学校新型冠状病毒感染的肺炎疫情防控工作，我承诺以下内容填写属实。 30s 已阅读并同意 >> ins")
     page2.click("text=下一步")
     page2.click("#hsjcsj i")
-    page2.click("td:has-text(\"14\")")
+    page2.click("td:has-text(\"22\")")
     page2.click("text=本人承诺登记后、到校前不再前往其他地区 >> ins")
     page2.click("button:has-text(\"提交\")")
     page2.click("a:has-text(\"确定\")")

@@ -11,10 +11,10 @@ def run(playwright: Playwright) -> None:
     page = context.new_page()
     page.goto("https://my.zcst.edu.cn/_web/sopplus/sopplus/index.html", timeout = 0)
     # page.goto("https://authserver.zcst.edu.cn/cas/login?service=https%3A%2F%2Fmy.zcst.edu.cn%2FportalRedirect.jsp%3F_p%3DYXM9MSZwPTEmbT1OJg__")
-    page.click("[placeholder=\"用户名/手机号/邮箱\"]")
-    page.fill("[placeholder=\"用户名/手机号/邮箱\"]", username)
-    page.click("[placeholder=\"密码\"]")
-    page.fill("[placeholder=\"密码\"]", password)
+    page.locator("[placeholder=\"用户名\\/手机号\\/邮箱\"]").click()
+    page.locator("[placeholder=\"用户名\\/手机号\\/邮箱\"]").fill(username)
+    page.locator("[placeholder=\"密码\"]").click()
+    page.locator("[placeholder=\"密码\"]").fill(password)
     page.click("text=登 录")
     with context.expect_page() as page_info:
         page.click("text=健康卡填报"),
